@@ -41,33 +41,34 @@ void pinMode(int pin, int mode){
 
 void digitalWrite(int pin, int mode){
         switch(pin){
-        case 2:  PORTD = mode==1?  DDRD | (1<< PD0) :   DDRD & ~(1<<PD0);    break;
-        case 3:  PORTD = mode==1?  DDRD | (1<< PD1) :   DDRD & ~(1<<PD1);    break;
-        case 4:  PORTD = mode==1?  DDRD | (1<< PD2) :   DDRD & ~(1<<PD2);    break;
-        case 5:  PORTD = mode==1?  DDRD | (1<< PD3) :   DDRD & ~(1<<PD3);    break;
-        case 6:  PORTD = mode==1?  DDRD | (1<< PD4) :   DDRD & ~(1<<PD4);    break;
-        case 11: PORTD = mode==1?  DDRD | (1<< PD5) :   DDRD & ~(1<<PD5);    break;
-        case 12: PORTD = mode==1?  DDRD | (1<< PD6) :   DDRD & ~(1<<PD6);    break;
-        case 13: PORTD = mode==1?  DDRD | (1<< PD7) :   DDRD & ~(1<<PD7);    break;
+
+        case 2:  PORTD = mode==1?  PORTD | (1<< PD0) :   PORTD & ~(1<<PD0);    break;
+        case 3:  PORTD = mode==1?  PORTD | (1<< PD1) :   PORTD & ~(1<<PD1);    break;
+        case 4:  PORTD = mode==1?  PORTD | (1<< PD2) :   PORTD & ~(1<<PD2);    break;
+        case 5:  PORTD = mode==1?  PORTD | (1<< PD3) :   PORTD & ~(1<<PD3);    break;
+        case 6:  PORTD = mode==1?  PORTD | (1<< PD4) :   PORTD & ~(1<<PD4);    break;
+        case 11: PORTD = mode==1?  PORTD | (1<< PD5) :   PORTD & ~(1<<PD5);    break;
+        case 12: PORTD = mode==1?  PORTD | (1<< PD6) :   PORTD & ~(1<<PD6);    break;
+        case 13: PORTD = mode==1?  PORTD | (1<< PD7) :   PORTD & ~(1<<PD7);    break;
 
         // PORTB
-        case 14: PORTB = mode==1?  DDRB | (1<< PB0) :   DDRB & ~(1<<PB0);    break;
-        case 15: PORTB = mode==1?  DDRB | (1<< PB1) :   DDRB & ~(1<<PB1);    break;
-        case 16: PORTB = mode==1?  DDRB | (1<< PB2) :   DDRB & ~(1<<PB2);    break;
-        case 17: PORTB = mode==1?  DDRB | (1<< PB3) :   DDRB & ~(1<<PB3);    break;
-        case 18: PORTB = mode==1?  DDRB | (1<< PB4) :   DDRB & ~(1<<PB4);    break;
-        case 19: PORTB = mode==1?  DDRB | (1<< PB5) :   DDRB & ~(1<<PB5);    break;
-        case 9:  PORTB = mode==1?  DDRB | (1<< PB6) :   DDRB & ~(1<<PB6);    break;
-        case 10: PORTB = mode==1?  DDRB | (1<< PB7) :   DDRB & ~(1<<PB7);    break;
+        case 14: PORTB = mode==1?  PORTB | (1<< PB0) :   PORTB & ~(1<<PB0);    break;
+        case 15: PORTB = mode==1?  PORTB | (1<< PB1) :   PORTB & ~(1<<PB1);    break;
+        case 16: PORTB = mode==1?  PORTB | (1<< PB2) :   PORTB & ~(1<<PB2);    break;
+        case 17: PORTB = mode==1?  PORTB | (1<< PB3) :   PORTB & ~(1<<PB3);    break;
+        case 18: PORTB = mode==1?  PORTB | (1<< PB4) :   PORTB & ~(1<<PB4);    break;
+        case 19: PORTB = mode==1?  PORTB | (1<< PB5) :   PORTB & ~(1<<PB5);    break;
+        case 9:  PORTB = mode==1?  PORTB | (1<< PB6) :   PORTB & ~(1<<PB6);    break;
+        case 10: PORTB = mode==1?  PORTB | (1<< PB7) :   PORTB & ~(1<<PB7);    break;
 
         // PORT C
-        case 23: PORTC = mode==1?  DDRC | (1<< PC0) :   DDRC & ~(1<<PB1);    break;
-        case 24: PORTC = mode==1?  DDRC | (1<< PC1) :   DDRC & ~(1<<PC1);    break;
-        case 25: PORTC = mode==1?  DDRC | (1<< PC2) :   DDRC & ~(1<<PC2);    break;
-        case 26: PORTC = mode==1?  DDRC | (1<< PC3) :   DDRC & ~(1<<PC3);    break;
-        case 27: PORTC = mode==1?  DDRC | (1<< PC4) :   DDRC & ~(1<<PC4);    break;
-        case 28: PORTC = mode==1?  DDRC | (1<< PC5) :   DDRC & ~(1<<PC5);    break;
-        case 1:  PORTC = mode==1?  DDRC | (1<< PC6) :   DDRC & ~(1<<PC6);    break;
+        case 23: PORTC = mode==1?  PORTC | (1<< PC0) :   PORTC & ~(1<<PB1);    break;
+        case 24: PORTC = mode==1?  PORTC | (1<< PC1) :   PORTC & ~(1<<PC1);    break;
+        case 25: PORTC = mode==1?  PORTC | (1<< PC2) :   PORTC & ~(1<<PC2);    break;
+        case 26: PORTC = mode==1?  PORTC | (1<< PC3) :   PORTC & ~(1<<PC3);    break;
+        case 27: PORTC = mode==1?  PORTC | (1<< PC4) :   PORTC & ~(1<<PC4);    break;
+        case 28: PORTC = mode==1?  PORTC | (1<< PC5) :   PORTC & ~(1<<PC5);    break;
+        case 1:  PORTC = mode==1?  PORTC | (1<< PC6) :   PORTC & ~(1<<PC6);    break;
 
     }
 }
