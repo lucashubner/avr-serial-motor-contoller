@@ -1,3 +1,4 @@
+#include <avr/io.h>
 void pinMode(int pin, int mode){
     // PORTD
     switch(pin){

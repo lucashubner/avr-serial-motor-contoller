@@ -137,7 +137,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x8b0
+.text           0x0000000000000000      0x972
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/5.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vectors
@@ -219,155 +219,155 @@ END GROUP
                 0x00000000000000ec                __vector_18
                 0x00000000000000ec                __vector_20
  .text          0x00000000000000f0        0x0 obj/Debug/fuse.o
- .text          0x00000000000000f0        0x2 obj/Debug/main.o
+ .text          0x00000000000000f0       0x6e obj/Debug/main.o
                 0x00000000000000f0                main
- .text          0x00000000000000f2      0x3d2 obj/Debug/src/common.o
-                0x00000000000000f2                map(long, long, long, long, long)
-                0x0000000000000174                pinMode(int, int)
-                0x000000000000031c                digitalWrite(int, int)
- .text          0x00000000000004c4      0x1ca obj/Debug/src/Motor.o
-                0x00000000000004c4                Motor::Motor(int, int, int, int, int, int)
-                0x00000000000004c4                Motor::Motor(int, int, int, int, int, int)
-                0x000000000000055a                Motor::stop()
-                0x0000000000000596                Motor::forward()
-                0x00000000000005be                Motor::backward()
-                0x00000000000005e6                Motor::rigtWheelForward()
-                0x0000000000000602                Motor::rightWheelBackward()
-                0x000000000000061e                Motor::leftWheelForward()
-                0x000000000000063a                Motor::leftWheelBackward()
-                0x0000000000000656                Motor::rightWheelSpeed(unsigned int)
-                0x0000000000000672                Motor::leftWheelSpeed(unsigned int)
- .text          0x000000000000068e      0x13c obj/Debug/src/pwm.o
-                0x000000000000068e                pwm_enable(PWM_CHANNEL)
-                0x00000000000006dc                pwm_disable(PWM_CHANNEL)
-                0x000000000000072a                pwm_dutycycle(PWM_CHANNEL, unsigned char)
-                0x0000000000000760                pwm_initialize(PWM_CHANNEL)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
- .text          0x00000000000007ca        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
-                0x00000000000007ca                . = ALIGN (0x2)
+ .text          0x000000000000015e      0x414 obj/Debug/src/common.o
+                0x000000000000015e                map(long, long, long, long, long)
+                0x00000000000001e0                pinMode(int, int)
+                0x0000000000000392                digitalWrite(int, int)
+ .text          0x0000000000000572      0x1de obj/Debug/src/Motor.o
+                0x0000000000000572                Motor::Motor(int, int, int, int, int, int)
+                0x0000000000000572                Motor::Motor(int, int, int, int, int, int)
+                0x000000000000061c                Motor::stop()
+                0x0000000000000658                Motor::forward()
+                0x0000000000000680                Motor::backward()
+                0x00000000000006a8                Motor::rigtWheelForward()
+                0x00000000000006c4                Motor::rightWheelBackward()
+                0x00000000000006e0                Motor::leftWheelForward()
+                0x00000000000006fc                Motor::leftWheelBackward()
+                0x0000000000000718                Motor::setRightWheelSpeed(unsigned int)
+                0x0000000000000734                Motor::setLeftWheelSpeed(unsigned int)
+ .text          0x0000000000000750      0x13c obj/Debug/src/pwm.o
+                0x0000000000000750                pwm_enable(PWM_CHANNEL)
+                0x000000000000079e                pwm_disable(PWM_CHANNEL)
+                0x00000000000007ec                pwm_dutycycle(PWM_CHANNEL, unsigned char)
+                0x0000000000000822                pwm_initialize(PWM_CHANNEL)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x000000000000088c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000000000000088c                . = ALIGN (0x2)
  *(.text.*)
  .text.libgcc.mul
-                0x00000000000007ca       0x20 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
-                0x00000000000007ca                __mulsi3
+                0x000000000000088c       0x20 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+                0x000000000000088c                __mulsi3
  .text.libgcc.div
-                0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
- .text.libgcc   0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc   0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.prologue
-                0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.builtins
-                0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.fmul
-                0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.fixed
-                0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
+                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.mul
-                0x00000000000007ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.div
-                0x00000000000007ea       0x2e /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
-                0x00000000000007ea                __divmodsi4
- .text.libgcc   0x0000000000000818        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008ac       0x2e /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008ac                __divmodsi4
+ .text.libgcc   0x00000000000008da        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.prologue
-                0x0000000000000818        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008da        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.builtins
-                0x0000000000000818        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008da        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.fmul
-                0x0000000000000818        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008da        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.fixed
-                0x0000000000000818        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000008da        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.mul
-                0x0000000000000818        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008da        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.div
-                0x0000000000000818       0x10 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
-                0x0000000000000818                __negsi2
- .text.libgcc   0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008da       0x10 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008da                __negsi2
+ .text.libgcc   0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.prologue
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.builtins
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.fmul
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.fixed
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.mul
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
- .text.libgcc   0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
  .text.libgcc.div
-                0x0000000000000828        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
- .text.libgcc   0x0000000000000828        0xc /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
-                0x0000000000000828                __tablejump2__
+                0x00000000000008ea        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc   0x00000000000008ea        0xc /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008ea                __tablejump2__
  .text.libgcc.prologue
-                0x0000000000000834        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008f6        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
  .text.libgcc.builtins
-                0x0000000000000834        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008f6        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
  .text.libgcc.fmul
-                0x0000000000000834        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008f6        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
  .text.libgcc.fixed
-                0x0000000000000834        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008f6        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_tablejump2.o)
  .text.libgcc.mul
-                0x0000000000000834       0x16 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
-                0x0000000000000834                __muluhisi3
+                0x00000000000008f6       0x16 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x00000000000008f6                __muluhisi3
  .text.libgcc.div
-                0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
- .text.libgcc   0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.prologue
-                0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.builtins
-                0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.fmul
-                0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.fixed
-                0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.mul
-                0x000000000000084a        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000090c        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.div
-                0x000000000000084a       0x44 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x000000000000084a                __udivmodsi4
- .text.libgcc   0x000000000000088e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000090c       0x44 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000090c                __udivmodsi4
+ .text.libgcc   0x0000000000000950        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.prologue
-                0x000000000000088e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000000950        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.builtins
-                0x000000000000088e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000000950        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.fmul
-                0x000000000000088e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000000950        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.fixed
-                0x000000000000088e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000000950        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.mul
-                0x000000000000088e       0x1e /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
-                0x000000000000088e                __umulhisi3
+                0x0000000000000950       0x1e /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x0000000000000950                __umulhisi3
  .text.libgcc.div
-                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc   0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.prologue
-                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.builtins
-                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.fmul
-                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
-                0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
-                0x00000000000008ac                . = ALIGN (0x2)
+                0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000000000000096e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000008ac        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
-                0x00000000000008ac                exit
-                0x00000000000008ac                _exit
+ .fini9         0x000000000000096e        0x0 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+                0x000000000000096e                exit
+                0x000000000000096e                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -386,11 +386,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000008ac        0x4 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x000000000000096e        0x4 /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000008b0                _etext = .
+                0x0000000000000972                _etext = .
 
-.data           0x0000000000800100        0x0 load address 0x00000000000008b0
+.data           0x0000000000800100        0x0 load address 0x0000000000000972
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/5.3.0/../../../../avr/lib/avr5/crtatmega328p.o
@@ -435,8 +435,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x0000000000800100                PROVIDE (__bss_end, .)
-                0x00000000000008b0                __data_load_start = LOADADDR (.data)
-                0x00000000000008b0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000000972                __data_load_start = LOADADDR (.data)
+                0x0000000000000972                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800100        0x0
                 0x0000000000800100                PROVIDE (__noinit_start, .)
@@ -466,21 +466,21 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x2838
+.stab           0x0000000000000000     0x2acc
  *(.stab)
  .stab          0x0000000000000000      0x498 obj/Debug/fuse.o
- .stab          0x0000000000000498      0x300 obj/Debug/main.o
-                                        0x4c8 (size before relaxing)
- .stab          0x0000000000000798      0xe94 obj/Debug/src/common.o
+ .stab          0x0000000000000498      0x570 obj/Debug/main.o
+                                        0x57c (size before relaxing)
+ .stab          0x0000000000000a08      0xe94 obj/Debug/src/common.o
                                         0xea0 (size before relaxing)
- .stab          0x000000000000162c      0x99c obj/Debug/src/Motor.o
-                                        0x9a8 (size before relaxing)
- .stab          0x0000000000001fc8      0x870 obj/Debug/src/pwm.o
+ .stab          0x000000000000189c      0x9c0 obj/Debug/src/Motor.o
+                                        0x9cc (size before relaxing)
+ .stab          0x000000000000225c      0x870 obj/Debug/src/pwm.o
                                         0x87c (size before relaxing)
 
-.stabstr        0x0000000000000000     0x20e1
+.stabstr        0x0000000000000000     0x214f
  *(.stabstr)
- .stabstr       0x0000000000000000     0x20e1 obj/Debug/fuse.o
+ .stabstr       0x0000000000000000     0x214f obj/Debug/fuse.o
 
 .stab.excl
  *(.stab.excl)
@@ -586,10 +586,10 @@ Motor::backward()                                 obj/Debug/src/Motor.o
 Motor::forward()                                  obj/Debug/src/Motor.o
 Motor::leftWheelBackward()                        obj/Debug/src/Motor.o
 Motor::leftWheelForward()                         obj/Debug/src/Motor.o
-Motor::leftWheelSpeed(unsigned int)               obj/Debug/src/Motor.o
 Motor::rightWheelBackward()                       obj/Debug/src/Motor.o
-Motor::rightWheelSpeed(unsigned int)              obj/Debug/src/Motor.o
 Motor::rigtWheelForward()                         obj/Debug/src/Motor.o
+Motor::setLeftWheelSpeed(unsigned int)            obj/Debug/src/Motor.o
+Motor::setRightWheelSpeed(unsigned int)           obj/Debug/src/Motor.o
 Motor::stop()                                     obj/Debug/src/Motor.o
 __bad_interrupt                                   /usr/lib/gcc/avr/5.3.0/../../../../avr/lib/avr5/crtatmega328p.o
 __divmodsi4                                       /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_divmodsi4.o)
@@ -640,6 +640,7 @@ __vectors                                         /usr/lib/gcc/avr/5.3.0/../../.
 _exit                                             /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
 digitalWrite(int, int)                            obj/Debug/src/common.o
                                                   obj/Debug/src/Motor.o
+                                                  obj/Debug/main.o
 exit                                              /usr/lib/gcc/avr/5.3.0/avr5/libgcc.a(_exit.o)
                                                   /usr/lib/gcc/avr/5.3.0/../../../../avr/lib/avr5/crtatmega328p.o
 main                                              obj/Debug/main.o
@@ -647,6 +648,7 @@ main                                              obj/Debug/main.o
 map(long, long, long, long, long)                 obj/Debug/src/common.o
 pinMode(int, int)                                 obj/Debug/src/common.o
                                                   obj/Debug/src/Motor.o
+                                                  obj/Debug/main.o
 pwm_disable(PWM_CHANNEL)                          obj/Debug/src/pwm.o
 pwm_dutycycle(PWM_CHANNEL, unsigned char)         obj/Debug/src/pwm.o
 pwm_enable(PWM_CHANNEL)                           obj/Debug/src/pwm.o
