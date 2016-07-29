@@ -17,6 +17,7 @@ Motor::Motor(int EN1, int EN2, int I1, int I2, int I3, int I4)
     // Gambita pra teste
     digitalWrite(EN1, HIGH);
     digitalWrite(EN2, HIGH);
+    stop();
 }
 
 void Motor::forward(){

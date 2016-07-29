@@ -5,7 +5,7 @@
 1469759710 source:/home/lg/projeto-carrinho-serial/source-code/main.c
 	<avr/io.h>
 
-1469765254 source:/home/lg/projeto-carrinho-serial/source-code/src/Motor.cpp
+1469769864 source:/home/lg/projeto-carrinho-serial/source-code/src/Motor.cpp
 	"Motor.h"
 	"common.h"
 
@@ -14,7 +14,7 @@
 	"common.h"
 	"pwm.h"
 
-1469765704 source:/home/lg/projeto-carrinho-serial/source-code/src/common.cpp
+1469768125 source:/home/lg/projeto-carrinho-serial/source-code/src/common.cpp
 	"common.h"
 	<avr/io.h>
 
@@ -32,8 +32,16 @@
 1469763723 source:/home/lg/projeto-carrinho-serial/source-code/common.cpp
 	<avr/io.h>
 
-1469767676 source:/home/lg/projeto-carrinho-serial/source-code/main.cpp
+1469769444 source:/home/lg/projeto-carrinho-serial/source-code/main.cpp
 	<avr/io.h>
 	<util/delay.h>
+	"Motor.h"
+	"CommandParser.h"
+
+1469770251 source:/home/lg/projeto-carrinho-serial/source-code/src/CommandParser.cpp
+	"CommandParser.h"
+	"Motor.h"
+
+1469769503 /home/lg/projeto-carrinho-serial/source-code/include/CommandParser.h
 	"Motor.h"
 
