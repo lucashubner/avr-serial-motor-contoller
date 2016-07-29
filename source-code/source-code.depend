@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1469744044 source:/home/lg/projeto-carrinho-serial/source-code/fuse.c
+	<avr/io.h>
+
+1469759710 source:/home/lg/projeto-carrinho-serial/source-code/main.c
+	<avr/io.h>
+
+1469761499 source:/home/lg/projeto-carrinho-serial/source-code/src/Motor.cpp
+	"Motor.h"
+	"common.h"
+
+1469759994 /home/lg/projeto-carrinho-serial/source-code/include/Motor.h
+	<avr/io.h>
+
+1469760419 source:/home/lg/projeto-carrinho-serial/source-code/src/common.cpp
+	<avr/io.h>
+
+1469760427 /home/lg/projeto-carrinho-serial/source-code/include/common.h
+
+1469761507 source:/home/lg/projeto-carrinho-serial/source-code/src/pwm.cpp
+	"pwm.h"
+
+1469761523 /home/lg/projeto-carrinho-serial/source-code/include/pwm.h
+	<avr/io.h>
+
